@@ -86,8 +86,7 @@
     border-radius: 5%;
     width: 20em;
     height: 20em;
-    margin-top: 2em;
-    margin-right: 20em;
+    margin-right: 10em;
     margin-left: 2em;
     margin-bottom: 2em;
   }
@@ -112,29 +111,50 @@
   }
 
   .bots-info {
-    margin-top: 20px;
+    margin-top: 4.8em;
     font-weight: 200;
-    margin-left: 5%;
-    padding-left: 1%;
+    padding-left: 3em;
+    padding-right: 3.5em;
     font-size: 1em;
     color: black;
   }
 
   .bots-info1 {
-    margin-top: 4em;
+    margin-top: 4.8em;
     font-weight: 200;
-    margin-left: 5%;
-    padding-left: 1%;
+    padding-left: 3em;
+    padding-right: 3.5em;
+    font-size: 1em;
+    color: black;
+  }
+
+  .bots-info2 {
+    font-weight: 200;
+    margin-top: 2em;
+    padding-left: 3em;
+    padding-right: 3.5em;
     font-size: 1em;
     color: black;
   }
 
   .bots-button {
     font-weight: 200;
-    padding-left: 1%;
-    margin-top: 1%;
     font-size: 1em;
     color: black;
+  }
+
+  .bots-custom-container-main-text {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-right: 15em;
+    padding-left: 15em;
+  }
+
+  .bots-image-info {
+    width: 20em;
+    height: 20em;
+    margin-left: 3em;
+    margin-bottom: 2em;
   }
 
   .contact-image {
@@ -189,28 +209,110 @@
     border: 1px solid red;
   }
 
-  .bots-image {
-    border-radius: 10%;
+  .about-us-image {
+    margin-top: 2em;
+    border-radius: 15%;
+    border: 2px solid grey;
     width: 15em;
-    height: 15em;
-    border: 1px solid red;
+    height: 16em;
+  }
+
+  .about-us-text {
+    margin-top: 1em;
+    margin-left: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: black;
+    font-size: 1.4em;
+    font-family: "roboto";
   }
 
   .bots-text {
-    color: #473ffe;
-    font-size: 1.4em;
+    color: black;
+    font-size: 1em;
     font-family: "roboto";
     margin-left: 0.6em;
-    float: inline-end;
-    border: 1px solid red;
+    margin-bottom: 5em;
   }
 
   .bots-info-text {
-    position: absolute;
     margin-bottom: 10px;
     padding-top: 1px;
     padding-left: 3px;
-    color: #473ffe;
+    color: black;
+  }
+  .bots-button {
+    font-weight: 200;
+    font-size: 1em;
+    color: black;
+    margin-left: 5em;
+  }
+  .bots-main-text {
+    font-weight: 400;
+    font-size: 2em;
+    color: black;
+    margin-left: 0.3em;
+  }
+  .bots-info {
+    margin-top: 4.8em;
+    font-weight: 200;
+    padding-left: 3em;
+    padding-right: 3.5em;
+    font-size: 1em;
+    color: black;
+  }
+
+  .bots-info1 {
+    margin-top: 4.8em;
+    font-weight: 200;
+    padding-left: 3em;
+    padding-right: 3.5em;
+    font-size: 1em;
+    color: black;
+  }
+
+  .bots-info2 {
+    font-weight: 200;
+    margin-top: 2em;
+    padding-left: 3em;
+    padding-right: 3.5em;
+    font-size: 1em;
+    color: black;
+  }
+
+  .bots-image-info {
+    width: 20em;
+    height: 20em;
+    margin-left: 3em;
+    margin-bottom: 2em;
+  }
+
+  .bots-custom-container-main-text {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .contact-image {
+    margin-top: 2em;
+    width: 10em;
+    height: 10em;
+  }
+
+  .contact-text {
+    color: black;
+    font-size: 1.4em;
+    margin-left: 1em;
+  }
+
+  .contact-text2 {
+    float: right;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 3em;
+    color: black;
+    font-size: 1.4em;
   }
 }
 
