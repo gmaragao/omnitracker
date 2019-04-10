@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/omni_o_com-cor.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Omnitracker - Contato</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper grey lighten-5">
+        <a href="home" class="brand-logo"
+          ><img class="nav-image" src="images/omni_sem_fundo.png"
+        /></a>
+        <a
+          href="home"
+          data-target="mobile-demo"
+          class="sidenav-trigger"
+          style="color: #473FFE;"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="nav-text" href="home">Home</a></li>
+          <li><a class="nav-text" href="about-us">Sobre nós</a></li>
+          <li><a class="nav-text" href="bots">Bots</a></li>
+          <li><a class="nav-text" href="contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav mobile-nav" id="mobile-demo">
+      <li><a class="nav-text" href="home">Home</a></li>
+      <li><a class="nav-text" href="about-us">Sobre nós</a></li>
+      <li><a class="nav-text" href="bots">Bots</a></li>
+      <li><a class="nav-text" href="contact">Contato</a></li>
+    </ul>
+    <h2 style="color: black" class="center-align">Contato</h2>
+    <div class="center-align">
+      <img class="contact-image" src="images/android-contacts.png" />
+    </div>
+    <h5 class="contact-text">
+      Entre em contato conosco via email: <br />pedro@labventures.com.br<br />
+      maria@labventures.com.br
+    </h5>
+    <h5 class="contact-text2">
+      Ou venha nos fazer uma visita: Av. Plínio Kroeff 1715.
+    </h5>
+    <div class="container center-align">
+      <div class="row">
+        <form
+          action="/send-email"
+          method="POST"
+          id="contact-form"
+          class="col s12"
+        >
+          <div class="row">
+            <div class="input-field col s6 m6 l6">
+              <input
+                id="first_name"
+                name="first_name"
+                type="text"
+                class="validate"
+              />
+              <label for="first_name">Nome</label>
+            </div>
+            <div class="input-field col s6 m6 l6">
+              <input
+                id="last_name"
+                name="last_name"
+                type="text"
+                class="validate"
+              />
+              <label for="last_name">Sobrenome</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m6 l6">
+              <input id="email" type="email" class="validate" />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea
+                id="body"
+                class="materialize-textarea"
+                name="body"
+              ></textarea>
+              <label for="body">Conteúdo da mensagem</label>
+            </div>
+          </div>
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+            name="action"
+          >
+            Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+      });
+
+      //   $(document).ready(function() {
+      //     return $("#contact-form").submit(function(e) {
+      //       var email, message, name;
+      //       name = document.getElementById("first_name");
+      //       email = document.getElementById("email");
+      //       message = document.getElementById("textarea1");
+      //       if (!name.value || !email.value || !message.value) {
+      //         console.error("Please check your entries");
+      //         return false;
+      //       } else {
+      //         $.ajax({
+      //           method: "POST",
+      //           url: `https://formspree.io/gabriel.aragao2008@hotmail.com`,
+      //           data: $("#contact-form").serialize(),
+      //           datatype: "json"
+      //         });
+
+      //         e.preventDefault();
+      //         $(this)
+      //           .get(0)
+      //           .reset();
+
+      //         return console.info("Message sent");
+      //       }
+      //     });
+      //   });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
