@@ -42,6 +42,102 @@
   color: white;
 }
 
+@media only screen and (min-width: 769px) {
+  .about-us-image {
+    margin-top: 2em;
+    float: left;
+    border-radius: 15%;
+    border: 2px solid grey;
+    width: 21em;
+    height: 22em;
+    margin-right: 5em;
+    margin-left: 5em;
+  }
+
+  .about-us-text {
+    padding-top: 2em;
+    margin-right: 3em;
+    color: black;
+    font-size: 1.4em;
+    font-family: "roboto";
+  }
+  .bots-image {
+    margin-top: 2em;
+    float: left;
+    border-radius: 5%;
+    width: 20em;
+    height: 20em;
+    margin-right: 1em;
+    margin-left: 5em;
+  }
+
+  .bots-image2 {
+    margin-top: 2em;
+    float: left;
+    border-radius: 5%;
+    width: 20em;
+    height: 20em;
+    margin-right: 1em;
+    margin-left: 2em;
+  }
+
+  .bots-image-info {
+    float: right;
+    border-radius: 5%;
+    width: 20em;
+    height: 20em;
+    margin-top: 2em;
+    margin-right: 20em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+  }
+
+  .bots-text {
+    margin-bottom: 8em;
+    padding-top: 2em;
+    margin-right: 3em;
+    margin-left: 3em;
+    color: black;
+    font-size: 1.3em;
+    font-family: "roboto";
+  }
+
+  .bots-main-text {
+    position: relative;
+    top: -1em;
+    font-weight: 400;
+    margin-left: 5%;
+    font-size: 3em;
+    color: black;
+  }
+
+  .bots-info {
+    margin-top: 20px;
+    font-weight: 200;
+    margin-left: 5%;
+    padding-left: 1%;
+    font-size: 1em;
+    color: black;
+  }
+
+  .bots-info1 {
+    margin-top: 4em;
+    font-weight: 200;
+    margin-left: 5%;
+    padding-left: 1%;
+    font-size: 1em;
+    color: black;
+  }
+
+  .bots-button {
+    font-weight: 200;
+    padding-left: 1%;
+    margin-top: 1%;
+    font-size: 1em;
+    color: black;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .main-image-position {
@@ -62,6 +158,34 @@
     padding-top: 1em;
     padding-bottom: 2%;
     color: white;
+  }
+
+  .custom-about {
+    border: 1px solid red;
+  }
+
+  .bots-image {
+    border-radius: 10%;
+    width: 15em;
+    height: 15em;
+    border: 1px solid red;
+  }
+
+  .bots-text {
+    color: #473ffe;
+    font-size: 1.4em;
+    font-family: "roboto";
+    margin-left: 0.6em;
+    float: inline-end;
+    border: 1px solid red;
+  }
+
+  .bots-info-text {
+    position: absolute;
+    margin-bottom: 10px;
+    padding-top: 1px;
+    padding-left: 3px;
+    color: #473ffe;
   }
 }
 
@@ -114,18 +238,28 @@
   margin-right: 5em;
 }
 
-
-
 .app-custom-container {
   padding-top: 10%;
   padding-bottom: 2%;
+}
+
+.bots-custom-container {
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.bots-custom-break {
+  background-color: #473ffe;
+  border: 1.2em solid #473ffe;
+  border-radius: 30% 0% 30% 0%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .what-do-text {
   font-weight: 200;
 }
 
-
-.mobile-nav{
-  width:70%;
+.mobile-nav {
+  width: 70%;
 }
