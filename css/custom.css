@@ -136,6 +136,31 @@
     font-size: 1em;
     color: black;
   }
+
+  .contact-image {
+    margin-top: 2em;
+    float: left;
+    border-radius: 15%;
+    width: 15em;
+    height: 17em;
+    margin-right: 8em;
+    margin-left: 5em;
+  }
+
+  .contact-text {
+    padding-top: 3em;
+    margin-right: 3em;
+    color: black;
+    font-size: 1.4em;
+  }
+
+  .contact-text2 {
+    float: right;
+    margin-top: 3em;
+    margin-right: 18em;
+    color: black;
+    font-size: 1.4em;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -254,6 +279,10 @@
   border-radius: 30% 0% 30% 0%;
   width: 90%;
   margin-left: 5%;
+}
+
+.bots-color-button {
+  background-color: #473ffe;
 }
 
 .what-do-text {
