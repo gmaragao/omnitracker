@@ -168,8 +168,8 @@
   }
 
   .contact-text {
-    padding-top: 3em;
-    margin-right: 3em;
+    padding-top: 1em;
+    margin-left: 22%;
     color: black;
     font-size: 1.4em;
   }
@@ -180,6 +180,14 @@
     margin-right: 18em;
     color: black;
     font-size: 1.4em;
+  }
+
+  .contact-form-position {
+    margin-left: 14em;
+  }
+  .contact-button-form {
+    margin-left: 30%;
+    background-color: #473ffe;
   }
 }
 
@@ -393,4 +401,70 @@
 
 .mobile-nav {
   width: 70%;
+}
+
+/* label color */
+.input-field label {
+  color: grey;
+}
+/* label focus color */
+.input-field input[type="text"][id="name"]:focus + label {
+  color: #473ffe;
+}
+/* label underline focus color */
+.input-field input[type="text"][id="name"]:focus {
+  border-bottom: 1px solid #473ffe;
+  box-shadow: 0 1px 0 0 #473ffe;
+  color: #473ffe;
+}
+
+.input-field input[type="text"][id="name"].valid {
+  border-bottom: 1px solid #473ffe;
+  box-shadow: 0 1px 0 0 #473ffe;
+  color: #473ffe;
+}
+
+.input-field input[type="email"][id="email"]:focus + label {
+  color: #473ffe;
+}
+/* label underline focus color */
+.input-field input[type="email"][id="email"]:focus {
+  border-bottom: 1px solid #473ffe;
+  box-shadow: 0 1px 0 0 #473ffe;
+  color: #473ffe;
+}
+
+/* label focus color */
+.input-field textarea[type="text"][id="body"]:focus + label {
+  color: #473ffe;
+}
+/* label underline focus color */
+.input-field textarea[type="text"][id="body"]:focus {
+  border-bottom: 1px solid #473ffe;
+  box-shadow: 0 1px 0 0 #473ffe;
+  color: #473ffe;
+}
+
+.input-field textarea[type="text"][id="body"].valid {
+  border-bottom: 1px solid #473ffe;
+  box-shadow: 0 1px 0 0 #473ffe;
+  color: #473ffe;
+}
+
+/* valid color */
+.input-field input[type="email"][id="email"].valid {
+  border-bottom: 1px solid #473ffe;
+  box-shadow: 0 1px 0 0 #473ffe;
+  color: #473ffe;
+}
+
+/* invalid color */
+.input-field input[type="email"][id="email"].invalid {
+  border-bottom: 1px solid red;
+  box-shadow: 0 1px 0 0 red;
+  color: red;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #473ffe;
 }

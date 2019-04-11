@@ -1,3 +1,4 @@
+require("dotenv").config();
 var express = require("express"),
   path = require("path"),
   nodeMailer = require("nodemailer"),
@@ -37,33 +38,26 @@ app.post("/send-email", function(req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: "gabriel.aragao.comp@gmail.com",
-      pass: "86795682gb"
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD
     }
   });
   let mailOptions = {
-    from: `${req.body.first_name} ${req.body.last_name}`, // sender address
+    from: req.body.email, // sender address
     to: "gabriel.aragao.comp@gmail.com", // list of receivers
-    subject: "Será?", // Subject line
+    subject: "Contato Omnitracker Site", // Subject line
     text: req.body.body, // plain text body
-    html: `<p>A mensagem foi enviada de: ${req.body.first_name} ${
-      req.body.last_name
-    } e o texto é: ${req.body.body} </p>` // html body
+    html: `<b>A mensagem foi enviada de: ${req.body.name}, email: ${
+      req.body.email
+    } </b>
+    <br><br><p>e o texto é: ${req.body.body}</p> ` // html body
   };
-  console.log(
-    "first name:" +
-      req.body.first_name +
-      "last name" +
-      req.body.last_name +
-      "texto:" +
-      req.body.body
-  );
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return console.log(error);
     }
     console.log("Message %s sent: %s", info.messageId, info.response);
-    res.render("index");
+    res.render("contact");
   });
 });

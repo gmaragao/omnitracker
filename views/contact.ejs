@@ -48,18 +48,9 @@
       <li><a class="nav-text" href="contact">Contato</a></li>
     </ul>
     <h2 style="color: black" class="center-align">Contato</h2>
-    <div class="center-align">
-      <img class="contact-image" src="images/android-contacts.png" />
-    </div>
-    <h5 class="contact-text">
-      Entre em contato conosco via email: <br />pedro@labventures.com.br<br />
-      maria@labventures.com.br
-    </h5>
-    <h5 class="contact-text2">
-      Ou venha nos fazer uma visita: Av. Plínio Kroeff 1715.
-    </h5>
-    <div class="container center-align">
-      <div class="row">
+
+    <div class="container ">
+      <div class="row  contact-form-position">
         <form
           action="/send-email"
           method="POST"
@@ -67,51 +58,49 @@
           class="col s12"
         >
           <div class="row">
-            <div class="input-field col s6 m6 l6">
-              <input
-                id="first_name"
-                name="first_name"
-                type="text"
-                class="validate"
-              />
-              <label for="first_name">Nome</label>
-            </div>
-            <div class="input-field col s6 m6 l6">
-              <input
-                id="last_name"
-                name="last_name"
-                type="text"
-                class="validate"
-              />
-              <label for="last_name">Sobrenome</label>
+            <div class="input-field col s6 m8 l8">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="name" name="name" type="text" class="validate" />
+              <label for="name">Nome completo</label>
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s12 m6 l6">
-              <input id="email" type="email" class="validate" />
+            <div class="input-field col s12 m8 l8">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate" name="email" />
               <label for="email">Email</label>
+              <span
+                class="helper-text"
+                data-error="Email inválido"
+                data-success="OK"
+              ></span>
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12 m8 l8">
+              <i class="material-icons prefix">edit</i>
               <textarea
+                type="text"
                 id="body"
-                class="materialize-textarea"
                 name="body"
+                class="materialize-textarea validate"
               ></textarea>
               <label for="body">Conteúdo da mensagem</label>
             </div>
           </div>
           <button
-            class="btn waves-effect waves-light"
+            class="btn waves-effect waves-light contact-button-form"
             type="submit"
             name="action"
           >
-            Submit
+            Enviar
             <i class="material-icons right">send</i>
           </button>
         </form>
       </div>
+      <h5 class="contact-text">
+        Ou venha nos fazer uma visita: Av. Plínio Kroeff 1715.
+      </h5>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
