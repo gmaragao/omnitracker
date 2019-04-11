@@ -189,6 +189,13 @@
     margin-left: 30%;
     background-color: #473ffe;
   }
+
+  .modal-content img {
+    margin-top: 3em;
+    margin-left: 15em;
+    width: 12em;
+    height: 12em;
+  }
 }
 
 @media only screen and (max-width: 768px) {

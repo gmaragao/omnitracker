@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../node_modules/popups/css/popupS.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <title>Omnitracker - Contato</title>
   </head>
@@ -103,10 +104,29 @@
       </h5>
     </div>
 
+    <% if ( sucesso ) { %>
+    <div id="modal1" class="modal green accent-3">
+      <div class="modal-content ">
+        <h4>Mensagem enviada com sucesso!</h4>
+        <p>Recebemos sua mensagem, logo entraremos em contato!</p>
+        <img src="./images/Happy-Transparent-PNG.png" />
+      </div>
+      <div class="modal-footer  green accent-3">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+          >SAIR</a
+        >
+      </div>
+    </div>
+    <% } %>
+
+    <!-- Modal Structure -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
       $(document).ready(function() {
         $(".sidenav").sidenav();
+        $("#modal1").modal();
+        $("#modal1").modal("open");
       });
 
       //   $(document).ready(function() {
@@ -137,5 +157,6 @@
       //   });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../node_modules/popups/dist/popupS.js"></script>
   </body>
 </html>

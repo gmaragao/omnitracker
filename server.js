@@ -1,10 +1,16 @@
 require("dotenv").config();
+var cookieParser = require("cookie-parser");
+var session = require("express-session");
+var flash = require("req-flash");
 var express = require("express"),
   path = require("path"),
   nodeMailer = require("nodemailer"),
   bodyParser = require("body-parser");
 
 var app = express();
+app.use(cookieParser());
+app.use(session({ secret: "123" }));
+app.use(flash());
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
@@ -26,7 +32,7 @@ app.get("/about-us", function(req, res) {
   res.render("about_us");
 });
 app.get("/contact", function(req, res) {
-  res.render("contact");
+  res.render("contact", { sucesso: false });
 });
 app.get("/bots", function(req, res) {
   res.render("bots");
@@ -58,6 +64,6 @@ app.post("/send-email", function(req, res) {
       return console.log(error);
     }
     console.log("Message %s sent: %s", info.messageId, info.response);
-    res.render("contact");
+    res.render("contact", { sucesso: true });
   });
 });
