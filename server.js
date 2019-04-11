@@ -1,16 +1,12 @@
 require("dotenv").config();
-var cookieParser = require("cookie-parser");
-var session = require("express-session");
-var flash = require("req-flash");
+
 var express = require("express"),
   path = require("path"),
   nodeMailer = require("nodemailer"),
   bodyParser = require("body-parser");
 
 var app = express();
-app.use(cookieParser());
-app.use(session({ secret: "123" }));
-app.use(flash());
+
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
