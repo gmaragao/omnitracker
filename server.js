@@ -52,14 +52,13 @@ app.post("/send-email", function(req, res) {
     html: `<b>A mensagem foi enviada de: ${req.body.name}, email: ${
       req.body.email
     } </b>
-    <br><br><p>e o texto é: ${req.body.body}</p> ` // html body
+    <br><br><p><b>Mensagem:</b><br> ${req.body.body}</p> ` // html body
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return console.log(error);
     }
-    console.log("Message %s sent: %s", info.messageId, info.response);
     res.render("contact", { sucesso: true });
   });
 });

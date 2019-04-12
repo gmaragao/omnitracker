@@ -43,7 +43,7 @@
 }
 
 @media only screen and (min-width: 769px) {
-  .about-us-image {
+  .about-us img {
     margin-top: 2em;
     float: left;
     border-radius: 15%;
@@ -54,7 +54,7 @@
     margin-left: 5em;
   }
 
-  .about-us-text {
+  .about-us h5 {
     padding-top: 2em;
     margin-right: 3em;
     color: black;
@@ -224,19 +224,22 @@
     border: 1px solid red;
   }
 
-  .about-us-image {
+  .about-us img {
+    float: left;
+    margin-right: 1em;
+    margin-left: 1em;
     margin-top: 2em;
     border-radius: 15%;
     border: 2px solid grey;
-    width: 15em;
-    height: 16em;
+    width: 10em;
+    height: 10em;
   }
 
-  .about-us-text {
-    margin-top: 1em;
-    margin-left: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
+  .about-us h5 {
+    margin-left: 1em;
+    margin-right: 0.2em;
+
+    padding-top: 1.6em;
     color: black;
     font-size: 1.4em;
     font-family: "roboto";
